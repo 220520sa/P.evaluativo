@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"> -->
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/producto">General</button>
+      <button mat-menu-item routerLink="/alimentacion">Alimentación</button>
+     
+  </mat-menu>
+  <!-- </button> -->
+  
+
+  <button  mat-button routerLink="/inicio">Inicio</button>
+
+  <button  mat-button routerLink="/series">series</button>
+
+  <button  mat-button routerLink="/capitulos">capitulos</button>
+
+</mat-toolbar>
+
+<!--Label Para Modo Oscuro-->
+<label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+<input type="checkbox" id="toggle" (click)="cambiarFondo()">

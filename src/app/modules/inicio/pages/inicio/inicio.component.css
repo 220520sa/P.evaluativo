@@ -1,0 +1,15 @@
+.container{
+    
+    width: 50%;
+    padding-left: 25%;
+  
+justify-content: center;
+}
+.col{
+    justify-content: center;
+    display: flex;
+}
+img{
+    width: 100%;
+    
+}
