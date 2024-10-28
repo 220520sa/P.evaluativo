@@ -10,6 +10,13 @@ const routes: Routes = [
   {
     path:"",loadChildren:()=>import('./modules/inicio/inicio.module').then(m=>m.InicioModule)
   },
+ 
+  {
+    path:"",loadChildren:()=>import('./modules/categorias/categorias.module').then(m=>m.CategoriasModule)
+  },
+  {
+    path:"",loadChildren:()=>import('./modules/series/series.module').then(m=>m.SeriesModule)
+  },
 ];
 
 @NgModule({

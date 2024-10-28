@@ -7,13 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // IMPORTAMOS COMPONENTES GLOBALES
 import { SharedModule } from './modules/shared/shared.module';
-import { SeriesComponent } from './modules/pages/series/series.component';
-import { CapitulosComponent } from './modules/pages/capitulos/capitulos.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+  AppComponent
   ],
   imports: [
     BrowserModule,

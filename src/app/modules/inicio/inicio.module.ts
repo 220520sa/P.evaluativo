@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { InicioRoutingModule } from './inicio-routing.module';
+
 import { InicioComponent } from './pages/inicio/inicio.component';
-import { CardComponent } from './component/card/card.component'; 
+
+// COMPONENTES LOCALES
+import { CardComponent } from './component/card/card.component';
+
+// COMPONENTES DE MATERIAL
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-
 
 
 
@@ -15,13 +21,7 @@ import {MatCardModule} from '@angular/material/card';
   ],
   imports: [
     CommonModule,
-    MatButtonModule,
-    MatCardModule
-  ],
-  exports:[
-    InicioComponent,
-    CardComponent,
-    CommonModule,
+    InicioRoutingModule,
     MatButtonModule,
     MatCardModule
   ]

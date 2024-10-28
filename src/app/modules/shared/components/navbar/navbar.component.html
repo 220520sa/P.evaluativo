@@ -13,10 +13,17 @@
 
   <button  mat-button routerLink="/series">series</button>
 
-  <button  mat-button routerLink="/capitulos">capitulos</button>
+  <button id="menuProducto" mat-button [matMenuTriggerFor]="producto">categorias</button>
+  <mat-menu #producto="matMenu">
+    <button mat-menu-item routerLink="/accion">accion</button>
+    <button mat-menu-item routerLink="/drama">drama</button>
+    <button mat-menu-item routerLink="/misterio">misterio</button>
+    <button mat-menu-item routerLink="/romance">romance</button>
+  </mat-menu>
 
+
+ 
 </mat-toolbar>
-
 <!--Label Para Modo Oscuro-->
 <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
 <input type="checkbox" id="toggle" (click)="cambiarFondo()">
