@@ -7,6 +7,10 @@ import { AccionComponent } from './pages/accion/accion.component';
 import { DramaComponent } from './pages/drama/drama.component';
 import { MisterioComponent } from './pages/misterio/misterio.component';
 import { RomanceComponent } from './pages/romance/romance.component';
+import { CardComponent } from './component/card/card.component';
+import { CarruselComponent } from './component/carrusel/carrusel.component';
+import { CompraComponent } from './pages/compra/compra.component';
+import { VentaComponent } from './pages/venta/venta.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { RomanceComponent } from './pages/romance/romance.component';
     AccionComponent,
     DramaComponent,
     MisterioComponent,
-    RomanceComponent
+    RomanceComponent,
+    CardComponent,
+    CarruselComponent,
+    CompraComponent,
+    VentaComponent
   ],
   imports: [
     CommonModule,

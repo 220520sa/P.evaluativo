@@ -6,6 +6,8 @@ import { AccionComponent } from './pages/accion/accion.component';
 import { DramaComponent } from './pages/drama/drama.component';
 import { MisterioComponent } from './pages/misterio/misterio.component';
 import { RomanceComponent } from './pages/romance/romance.component';
+import { CompraComponent } from './pages/compra/compra.component';
+import { VentaComponent } from './pages/venta/venta.component';
 
 
 const routes: Routes = [
@@ -20,7 +22,14 @@ const routes: Routes = [
   },
   {
     path:"romance",component:RomanceComponent
+  },
+  {
+    path:"venta",component:VentaComponent
+  },
+  {
+    path:"compra",component:CompraComponent
   }
+
 ];
 
 @NgModule({

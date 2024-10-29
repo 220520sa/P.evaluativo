@@ -7,12 +7,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // IMPORTAMOS COMPONENTES GLOBALES
 import { SharedModule } from './modules/shared/shared.module';
+import { IniciosesionComponent } from './modules/autentificacion/pages/iniciosesion/iniciosesion.component';
+import { RegistroComponent } from './modules/autentificacion/pages/registro/registro.component';
 
 
 
 @NgModule({
   declarations: [
-  AppComponent
+  AppComponent,
+  IniciosesionComponent,
+  RegistroComponent,
+
+  
   ],
   imports: [
     BrowserModule,
