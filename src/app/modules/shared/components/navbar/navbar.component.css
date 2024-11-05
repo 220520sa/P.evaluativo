@@ -27,4 +27,8 @@
     #menuSecciones{
         display: none;
     }
+    img{
+        width: 5% ;
+        
+    }
 }
