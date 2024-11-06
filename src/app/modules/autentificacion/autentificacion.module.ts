@@ -3,12 +3,45 @@ import { CommonModule } from '@angular/common';
 
 import { AutentificacionRoutingModule } from './autentificacion-routing.module';
 
+import { RegistroComponent } from './pages/registro/registro.component';
+import { IniciosesionComponent } from './pages/iniciosesion/iniciosesion.component';
+
+
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    RegistroComponent,
+    IniciosesionComponent
+  ],
   imports: [
     CommonModule,
-    AutentificacionRoutingModule
+    AutentificacionRoutingModule,
+    // MATERIAL
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatSelectModule,
+    // ANGULAR
+    FormsModule
+  ],
+  exports: [
+    RegistroComponent,
+    IniciosesionComponent,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatSelectModule,
+    FormsModule
   ]
 })
 export class AutentificacionModule { }
+

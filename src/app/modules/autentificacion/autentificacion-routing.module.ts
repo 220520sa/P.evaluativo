@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegistroComponent } from './pages/registro/registro.component';
-import { InicioComponent } from '../inicio/pages/inicio/inicio.component';
 import { IniciosesionComponent } from './pages/iniciosesion/iniciosesion.component';
 
 const routes: Routes = [
