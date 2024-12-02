@@ -1,10 +1,38 @@
+<body>
 
+    <H1>INICIO DE SESION</H1>
 
-<div class="container">
-    <div class="row">
-        <H1>INICIO DE SESION</H1>
+    <div class="col">
 
-        <i class="material-icons" style="font-size: 200px;"><img src="../../../../../assets/registro.png" alt=""></i>
-
+        <img src="../../../../../assets/registro.png" alt="">
     </div>
-</div>
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Nombre de usuario -->
+            <mat-form-field appearance="fill" class="barra">
+                <mat-label>Ingrese su nombre de usuario:</mat-label>
+                <!-- ngModel = directiva BIDIRECCIONAL utilizada para formularios -->
+                <input [(ngModel)]="usuarios.nombre" matInput placeholder="Ej: Pepito" required>
+            </mat-form-field>
+
+            <!-- Contraseña de usuario -->
+            <mat-form-field class="barra">
+                <mat-label>Ingrese su contraseña:</mat-label>
+                <input [(ngModel)]="usuarios.password" matInput [type]="hide ? 'password' : 'text'" #input minlength="6"
+                    required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-hint align="start">Mínimo:6/{{input.value.length}}</mat-hint>
+            </mat-form-field>
+            <div>
+
+                <!-- Botón para ENVIAR la información a la Base de Datos-->
+                <button class="boton" mat-raised-button color="primary" (click)="registrar()">INICIAR</button>
+            </div>
+        </div>
+    </div>
+</body>
