@@ -73,7 +73,7 @@ export class AuthService {
       Al enviar info. por tubería, "mapeamos" la colección, obtenemos un usuario especifico 
       y buscamos su atributo "rol", aún si este es "nulo"
     */
-    return this.servicioFirestore.collection("usuarios").doc(uid).valueChanges()
+   return this.servicioFirestore.collection("usuarios").doc(uid).valueChanges()
     .pipe(map((usuario: any) => usuario ? usuario.rol: null));
   }
 
