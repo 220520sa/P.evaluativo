@@ -11,6 +11,9 @@ import { CardComponent } from './component/card/card.component';
 import { CarruselComponent } from './component/carrusel/carrusel.component';
 import { CompraComponent } from './pages/compra/compra.component';
 import { VentaComponent } from './pages/venta/venta.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 @NgModule({
@@ -27,6 +30,8 @@ import { VentaComponent } from './pages/venta/venta.component';
   imports: [
     CommonModule,
     CategoriasRoutingModule,
+    MatCardModule,
+    MatButtonModule
   ],
   exports: [
     AccionComponent,
